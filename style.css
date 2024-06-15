@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.collapse{
+    justify-content: flex-end;
+
+}
+.navbar-toggler{
+background-color: white !important;
+}
+.main{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0em;
+}
+.audio-player{
+    width: 225px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    box-shadow: 1px 1px 20px 1 px rgb(241, 237, 237);
+    flex: 1 1 225px;
+    margin: 1em;
+    border-radius: 5px;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+.audio-player:hover{
+    background-color: rgba(25, 23, 23, 0.632);
+}
+.audio-player img{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    filter: drop-shadow(1px 1px 20px rgb(27, 26, 27));
+}
+.audio-player h2{
+    font-weight: 500;
+    font-size: medium;
+    margin: 8px;
+}
+.audio-player p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin: 5px;
+}
+.main .audio-player .play {
+    position: relative;
+}
+
+.main .audio-player img .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+.main .audio:hover img .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+button {
+    background-color: #29282b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.play::after {
+    content: 'Play';
+}
+
+button.pause::after {
+    content: 'Pause';
+}
+
+
+.footer {
+  color: white;
+  background-color: rgb(27, 22, 22);
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 15px;
+}
+
+.footer-links {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+
+}
+.footer-links a:hover {
+  color: rgb(122, 122, 118);
+}
+
+
+.footer-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.footer-company-name {
+  margin: 10px 0;
+}
+.footer-company-name strong{
+  color: white;
+  cursor: pointer;
+}
+.footer-company-name strong:hover{
+  color: rgb(235, 104, 38);
+}
+.footer-left h3 strong{
+  color: white;
+  cursor: pointer;
+}
+.footer-left h3 strong:hover{
+  color: rgb(235, 104, 38);
+}
+.footer-center i {
+  color: white;
+  font-size: 25px;
+  width: 20px;
+  height: 7px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin: 10px 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.footer-center .fa {
+color: white;
+}
+.footer-center a .fab{
+  color: white;
+  }
+  .footer-center a .fab:hover {
+    color:  #6c757d;
+  }
+
+.footer-center .fa:hover{
+  color:  #6c757d;
+}
+.footer-icons a {
+  display: inline-block;
+  margin: 0 5px;
+  color:rgb(203, 237, 238);
+  font-size: 20px;
+}
+
+
+
+.footer-icons a:hover {
+  color: #6c757d;
+  ;
+}
+
+.footer-company-about {
+  margin: 20px 0;
+  cursor: pointer;
+}
+.footer-company-about strong:hover{
+  color: rgb(235, 104, 38);
+  
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
